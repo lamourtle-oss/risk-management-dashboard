@@ -1,4 +1,3 @@
-const AUTH_KEY = "rmd_auth_hash";
 const charts = {};
 const MAP = {
   กรุงเทพมหานคร: [180, 250],
@@ -46,18 +45,6 @@ function showBanner(message, isError) {
   el.style.background = isError ? "#fff1f2" : "#fff7ed";
   el.style.borderColor = isError ? "#fecdd3" : "#fed7aa";
   el.style.color = isError ? "#9f1239" : "#9a3412";
-}
-
-async function sha256(text) {
-  const bytes = new TextEncoder().encode(text);
-  const buf = await crypto.subtle.digest("SHA-256", bytes);
-  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
-}
-
-function showLoginError(message) {
-  const el = $("login-error");
-  el.hidden = false;
-  el.textContent = message || "รหัสผ่านไม่ถูกต้อง";
 }
 
 function drawChart(id, config) {
@@ -432,18 +419,16 @@ async function refresh() {
   showBanner("โหลดข้อมูลล่าสุดจากไฟล์ที่เผยแพร่แล้ว หากต้องการของใหม่จาก SharePoint ให้โหลดไฟล์ลงเครื่อง แล้วประมวลผลก่อน push GitHub");
 }
 
-function unlock() {
-  $("gate").hidden = true;
-  $("app").hidden = false;
-  $("app").inert = false;
-  loadData().catch((error) => showBanner(error.message, true));
-}
-
-document.addEventListener("dashboard-ready", function () {
+function startDashboard() {
   loadData().catch(function (error) {
     showBanner(error.message, true);
   });
-});
+}
+
+document.addEventListener("dashboard-ready", startDashboard);
+if ($("app") && !$("app").hidden) {
+  startDashboard();
+}
 
 $("refresh-btn").addEventListener("click", refresh);
 $("quarter-filter").addEventListener("change", function (event) {
