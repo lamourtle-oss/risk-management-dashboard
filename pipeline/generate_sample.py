@@ -81,18 +81,21 @@ def build_workbook() -> Workbook:
     _sheet(wb, "NPL ภาพรวม", ["ไตรมาส", "ประเภท NPL", "สัดส่วน NPL (%)", "มูลค่า NPL"], overview)
 
     stages = []
-    for quarter in QUARTERS:
+    for q_idx, quarter in enumerate(QUARTERS):
+        older = "2567" in quarter
         for npl_type in NPL_TYPES:
-            stages.append((quarter, npl_type, "Stage 1", 820, 12_000_000))
-            stages.append((quarter, npl_type, "Stage 2", 210, 7_400_000))
+            stage1 = (900 if older else 780) - q_idx * 35
+            stage2 = (180 if older else 220) + q_idx * 18
             stage3 = {
                 "HP Home appliance": 95,
                 "HP Commercial": 140,
                 "C4C": 48,
                 "LockPhone": 36,
                 "Debt conso": 72,
-            }[npl_type]
-            stages.append((quarter, npl_type, "Stage 3", stage3, 9_800_000))
+            }[npl_type] + q_idx * 10 + (20 if older else 0)
+            stages.append((quarter, npl_type, "Stage 1", stage1, 12_000_000 - q_idx * 400_000))
+            stages.append((quarter, npl_type, "Stage 2", stage2, 7_400_000 + q_idx * 250_000))
+            stages.append((quarter, npl_type, "Stage 3", stage3, 9_800_000 + q_idx * 180_000))
     _sheet(
         wb,
         "NPL Stage",

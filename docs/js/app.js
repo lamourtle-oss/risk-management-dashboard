@@ -120,21 +120,25 @@ function renderNpl() {
     options: { plugins: { legend: { position: "bottom" } }, scales: { y: { beginAtZero: true } } },
   });
 
-  const stages = currentQuarterItems(state.data.npl.byStage, (item) => !state.nplType || item.type === state.nplType);
+  const stages = (state.data.npl.byStage || []).filter((item) => !state.nplType || item.type === state.nplType);
+  const stageQuarters = [...new Set(stages.map((item) => item.quarter).filter(Boolean))];
   const stageNames = [...new Set(stages.map((item) => item.stage))];
+  const quarterColors = ["#1e3a5f", "#9f1239", "#b45309", "#166534", "#7c3aed"];
   drawChart("npl-stage", {
     type: "bar",
     data: {
       labels: stageNames,
-      datasets: [
-        {
-          label: "จำนวนสัญญา",
-          data: stageNames.map((s) => stages.filter((item) => item.stage === s).reduce((sum, item) => sum + item.contracts, 0)),
-          backgroundColor: "#9f1239",
-        },
-      ],
+      datasets: stageQuarters.map((quarter, idx) => ({
+        label: quarter,
+        data: stageNames.map((stage) =>
+          stages
+            .filter((item) => item.quarter === quarter && item.stage === stage)
+            .reduce((sum, item) => sum + item.contracts, 0)
+        ),
+        backgroundColor: quarterColors[idx % quarterColors.length],
+      })),
     },
-    options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } },
+    options: { plugins: { legend: { position: "bottom" } }, scales: { y: { beginAtZero: true } } },
   });
 
   const closures = currentQuarterItems(
