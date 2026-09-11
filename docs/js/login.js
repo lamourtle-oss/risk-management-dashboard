@@ -11,6 +11,7 @@
   }
 
   function unlock() {
+    document.body.className = String(document.body.className || "").replace("locked", "");
     var gate = byId("gate");
     var app = byId("app");
     if (gate) {

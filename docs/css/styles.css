@@ -54,11 +54,28 @@ h2 {
 }
 
 .gate {
-  min-height: calc(100vh - 40px);
-  display: grid;
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  min-height: 100vh;
   place-items: center;
-  position: relative;
-  z-index: 30;
+  padding: 20px;
+  background:
+    radial-gradient(circle at top right, rgba(159, 18, 57, 0.08), transparent 30%),
+    linear-gradient(180deg, #f7f3eb, var(--paper));
+}
+
+body.locked {
+  overflow: hidden;
+}
+
+body.locked .gate {
+  display: grid !important;
+}
+
+body.locked #app {
+  display: none !important;
 }
 
 .gate-card,
