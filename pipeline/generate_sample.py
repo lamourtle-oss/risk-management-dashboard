@@ -18,9 +18,9 @@ except Exception:
     pass
 
 QUARTERS = ["Q4/2567", "Q1/2568", "Q2/2568", "Q3/2568"]
-NPL_TYPES = ["HP Home appliance", "HP Commercial"]
+NPL_TYPES = ["HP Home appliance", "HP Commercial", "C4C", "LockPhone", "Debt conso"]
 STAGES = ["Stage 1", "Stage 2", "Stage 3"]
-LOAN_TYPES = ["HP Home appliance", "HP Commercial", "สินเชื่อเช่าซื้ออื่น"]
+LOAN_TYPES = ["HP Home appliance", "HP Commercial", "C4C", "LockPhone", "Debt conso"]
 BRANCHES = [
     ("สาขาสยาม", "กรุงเทพมหานคร"),
     ("สาขารังสิต", "ปทุมธานี"),
@@ -60,9 +60,24 @@ def build_workbook() -> Workbook:
     wb.remove(default)
 
     overview = []
+    npl_ratios = {
+        "HP Home appliance": (4.8, 3.9),
+        "HP Commercial": (6.1, 5.4),
+        "C4C": (3.2, 2.8),
+        "LockPhone": (5.0, 4.4),
+        "Debt conso": (7.2, 6.5),
+    }
+    npl_amounts = {
+        "HP Home appliance": 42_500_000,
+        "HP Commercial": 18_200_000,
+        "C4C": 9_600_000,
+        "LockPhone": 6_400_000,
+        "Debt conso": 11_800_000,
+    }
     for quarter in QUARTERS:
-        overview.append((quarter, "HP Home appliance", 4.8 if "2567" in quarter else 3.9, 42_500_000))
-        overview.append((quarter, "HP Commercial", 6.1 if "2567" in quarter else 5.4, 18_200_000))
+        for npl_type in NPL_TYPES:
+            old_ratio, new_ratio = npl_ratios[npl_type]
+            overview.append((quarter, npl_type, old_ratio if "2567" in quarter else new_ratio, npl_amounts[npl_type]))
     _sheet(wb, "NPL ภาพรวม", ["ไตรมาส", "ประเภท NPL", "สัดส่วน NPL (%)", "มูลค่า NPL"], overview)
 
     stages = []
@@ -70,7 +85,14 @@ def build_workbook() -> Workbook:
         for npl_type in NPL_TYPES:
             stages.append((quarter, npl_type, "Stage 1", 820, 12_000_000))
             stages.append((quarter, npl_type, "Stage 2", 210, 7_400_000))
-            stages.append((quarter, npl_type, "Stage 3", 95 if npl_type.startswith("HP Home") else 140, 9_800_000))
+            stage3 = {
+                "HP Home appliance": 95,
+                "HP Commercial": 140,
+                "C4C": 48,
+                "LockPhone": 36,
+                "Debt conso": 72,
+            }[npl_type]
+            stages.append((quarter, npl_type, "Stage 3", stage3, 9_800_000))
     _sheet(
         wb,
         "NPL Stage",

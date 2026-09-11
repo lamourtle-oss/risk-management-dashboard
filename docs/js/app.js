@@ -1,4 +1,6 @@
 const charts = {};
+const NPL_TYPE_ORDER = ["HP Home appliance", "HP Commercial", "C4C", "LockPhone", "Debt conso"];
+const NPL_COLORS = ["#1e3a5f", "#9f1239", "#b45309", "#166534", "#7c3aed"];
 const MAP = {
   กรุงเทพมหานคร: [180, 250],
   ปทุมธานี: [188, 232],
@@ -62,6 +64,16 @@ function currentQuarterItems(list, extra) {
   });
 }
 
+function uniqueNplTypes() {
+  const found = new Set();
+  (state.data.npl.overview || []).forEach((item) => item.type && found.add(item.type));
+  (state.data.npl.byStage || []).forEach((item) => item.type && found.add(item.type));
+  (state.data.npl.closures || []).forEach((item) => item.loanType && found.add(item.loanType));
+  const ordered = NPL_TYPE_ORDER.filter((name) => found.has(name));
+  const extra = [...found].filter((name) => !NPL_TYPE_ORDER.includes(name)).sort();
+  return ordered.concat(extra);
+}
+
 function renderFilters() {
   const quarters = state.data.quarters || [];
   const select = $("quarter-filter");
@@ -70,7 +82,7 @@ function renderFilters() {
   select.value = current && quarters.includes(current) ? current : "";
   state.quarter = select.value;
 
-  const types = [...new Set((state.data.npl.byStage || []).map((item) => item.type).filter(Boolean))];
+  const types = uniqueNplTypes();
   $("npl-type").innerHTML =
     `<option value="">ทั้งหมด</option>` + types.map((t) => `<option value="${t}">${t}</option>`).join("");
   $("npl-type").value = state.nplType;
@@ -84,7 +96,7 @@ function renderFilters() {
 function renderNpl() {
   const overview = currentQuarterItems(state.data.npl.overview, (item) => !state.nplType || item.type === state.nplType);
   const labels = [...new Set(overview.map((item) => item.quarter || item.type))];
-  const types = [...new Set(overview.map((item) => item.type))];
+  const types = uniqueNplTypes().filter((t) => overview.some((item) => item.type === t));
   drawChart("npl-overview", {
     type: "bar",
     data: {
@@ -102,7 +114,7 @@ function renderNpl() {
             data: [...new Set(overview.map((item) => item.quarter))].map(
               (q) => overview.find((item) => item.quarter === q && item.type === t)?.ratio || 0
             ),
-            backgroundColor: ["#1e3a5f", "#9f1239", "#b45309"][idx % 3],
+            backgroundColor: NPL_COLORS[idx % NPL_COLORS.length],
           })),
     },
     options: { plugins: { legend: { position: "bottom" } }, scales: { y: { beginAtZero: true } } },
@@ -125,7 +137,10 @@ function renderNpl() {
     options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } },
   });
 
-  const closures = currentQuarterItems(state.data.npl.closures);
+  const closures = currentQuarterItems(
+    state.data.npl.closures,
+    (item) => !state.nplType || item.loanType === state.nplType
+  );
   const grouped = {};
   closures.forEach((item) => {
     const key = item.loanType;

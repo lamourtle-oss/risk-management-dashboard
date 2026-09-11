@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-11T13:17:20+07:00",
-  "generatedAtLabel": "11/09/2026 13:17 น.",
+  "generatedAt": "2026-09-11T13:58:20+07:00",
+  "generatedAtLabel": "11/09/2026 13:58 น.",
   "source": "sample",
   "sourceLabel": "ข้อมูลตัวอย่างตามไฟล์สเปก",
   "files": [
@@ -27,6 +27,24 @@
         "amount": 18200000.0
       },
       {
+        "quarter": "Q4/2567",
+        "type": "C4C",
+        "ratio": 3.2,
+        "amount": 9600000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "type": "LockPhone",
+        "ratio": 5.0,
+        "amount": 6400000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "type": "Debt conso",
+        "ratio": 7.2,
+        "amount": 11800000.0
+      },
+      {
         "quarter": "Q1/2568",
         "type": "HP Home appliance",
         "ratio": 3.9,
@@ -37,6 +55,24 @@
         "type": "HP Commercial",
         "ratio": 5.4,
         "amount": 18200000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "C4C",
+        "ratio": 2.8,
+        "amount": 9600000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "LockPhone",
+        "ratio": 4.4,
+        "amount": 6400000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "Debt conso",
+        "ratio": 6.5,
+        "amount": 11800000.0
       },
       {
         "quarter": "Q2/2568",
@@ -51,6 +87,24 @@
         "amount": 18200000.0
       },
       {
+        "quarter": "Q2/2568",
+        "type": "C4C",
+        "ratio": 2.8,
+        "amount": 9600000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "LockPhone",
+        "ratio": 4.4,
+        "amount": 6400000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "Debt conso",
+        "ratio": 6.5,
+        "amount": 11800000.0
+      },
+      {
         "quarter": "Q3/2568",
         "type": "HP Home appliance",
         "ratio": 3.9,
@@ -61,6 +115,24 @@
         "type": "HP Commercial",
         "ratio": 5.4,
         "amount": 18200000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "C4C",
+        "ratio": 2.8,
+        "amount": 9600000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "LockPhone",
+        "ratio": 4.4,
+        "amount": 6400000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "Debt conso",
+        "ratio": 6.5,
+        "amount": 11800000.0
       }
     ],
     "byStage": [
@@ -107,6 +179,69 @@
         "amount": 9800000.0
       },
       {
+        "quarter": "Q4/2567",
+        "type": "C4C",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "type": "C4C",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "type": "C4C",
+        "stage": "Stage 3",
+        "contracts": 48,
+        "amount": 9800000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "type": "LockPhone",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "type": "LockPhone",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "type": "LockPhone",
+        "stage": "Stage 3",
+        "contracts": 36,
+        "amount": 9800000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "type": "Debt conso",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "type": "Debt conso",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "type": "Debt conso",
+        "stage": "Stage 3",
+        "contracts": 72,
+        "amount": 9800000.0
+      },
+      {
         "quarter": "Q1/2568",
         "type": "HP Home appliance",
         "stage": "Stage 1",
@@ -149,6 +284,69 @@
         "amount": 9800000.0
       },
       {
+        "quarter": "Q1/2568",
+        "type": "C4C",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "C4C",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "C4C",
+        "stage": "Stage 3",
+        "contracts": 48,
+        "amount": 9800000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "LockPhone",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "LockPhone",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "LockPhone",
+        "stage": "Stage 3",
+        "contracts": 36,
+        "amount": 9800000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "Debt conso",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "Debt conso",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "Debt conso",
+        "stage": "Stage 3",
+        "contracts": 72,
+        "amount": 9800000.0
+      },
+      {
         "quarter": "Q2/2568",
         "type": "HP Home appliance",
         "stage": "Stage 1",
@@ -191,6 +389,69 @@
         "amount": 9800000.0
       },
       {
+        "quarter": "Q2/2568",
+        "type": "C4C",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "C4C",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "C4C",
+        "stage": "Stage 3",
+        "contracts": 48,
+        "amount": 9800000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "LockPhone",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "LockPhone",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "LockPhone",
+        "stage": "Stage 3",
+        "contracts": 36,
+        "amount": 9800000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "Debt conso",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "Debt conso",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "Debt conso",
+        "stage": "Stage 3",
+        "contracts": 72,
+        "amount": 9800000.0
+      },
+      {
         "quarter": "Q3/2568",
         "type": "HP Home appliance",
         "stage": "Stage 1",
@@ -230,6 +491,69 @@
         "type": "HP Commercial",
         "stage": "Stage 3",
         "contracts": 140,
+        "amount": 9800000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "C4C",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "C4C",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "C4C",
+        "stage": "Stage 3",
+        "contracts": 48,
+        "amount": 9800000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "LockPhone",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "LockPhone",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "LockPhone",
+        "stage": "Stage 3",
+        "contracts": 36,
+        "amount": 9800000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "Debt conso",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "Debt conso",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "Debt conso",
+        "stage": "Stage 3",
+        "contracts": 72,
         "amount": 9800000.0
       }
     ],
@@ -256,7 +580,27 @@
       },
       {
         "quarter": "Q4/2567",
-        "loanType": "สินเชื่อเช่าซื้ออื่น",
+        "loanType": "C4C",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "loanType": "LockPhone",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "loanType": "Debt conso",
         "writeoffContracts": 12,
         "writeoffAmount": 2100000.0,
         "repossessContracts": 8,
@@ -286,7 +630,27 @@
       },
       {
         "quarter": "Q1/2568",
-        "loanType": "สินเชื่อเช่าซื้ออื่น",
+        "loanType": "C4C",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "loanType": "LockPhone",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "loanType": "Debt conso",
         "writeoffContracts": 12,
         "writeoffAmount": 2100000.0,
         "repossessContracts": 8,
@@ -316,7 +680,27 @@
       },
       {
         "quarter": "Q2/2568",
-        "loanType": "สินเชื่อเช่าซื้ออื่น",
+        "loanType": "C4C",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "loanType": "LockPhone",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "loanType": "Debt conso",
         "writeoffContracts": 12,
         "writeoffAmount": 2100000.0,
         "repossessContracts": 8,
@@ -346,7 +730,27 @@
       },
       {
         "quarter": "Q3/2568",
-        "loanType": "สินเชื่อเช่าซื้ออื่น",
+        "loanType": "C4C",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "loanType": "LockPhone",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "loanType": "Debt conso",
         "writeoffContracts": 12,
         "writeoffAmount": 2100000.0,
         "repossessContracts": 8,
