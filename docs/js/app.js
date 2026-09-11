@@ -377,14 +377,18 @@ function renderService() {
 }
 
 function render() {
-  const source = state.data.sourceLabel ? ` · ${state.data.sourceLabel}` : "";
-  $("generated-at").textContent = `${state.data.generatedAtLabel || "-"}${source}`;
-  renderFilters();
-  renderNpl();
-  renderSales();
-  renderInventory();
-  renderOil();
-  renderService();
+  try {
+    const source = state.data.sourceLabel ? ` · ${state.data.sourceLabel}` : "";
+    $("generated-at").textContent = `${state.data.generatedAtLabel || "-"}${source}`;
+    renderFilters();
+    renderNpl();
+    renderSales();
+    renderInventory();
+    renderOil();
+    renderService();
+  } catch (error) {
+    showBanner(error.message || "แสดงผลไม่ครบ", true);
+  }
 }
 
 function showTab(name) {
