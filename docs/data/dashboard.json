@@ -1,0 +1,3367 @@
+{
+  "generatedAt": "2026-09-11T13:17:20+07:00",
+  "generatedAtLabel": "11/09/2026 13:17 น.",
+  "source": "sample",
+  "sourceLabel": "ข้อมูลตัวอย่างตามไฟล์สเปก",
+  "files": [
+    "dashboard-spec.xlsx"
+  ],
+  "quarters": [
+    "Q4/2567",
+    "Q1/2568",
+    "Q2/2568",
+    "Q3/2568"
+  ],
+  "npl": {
+    "overview": [
+      {
+        "quarter": "Q4/2567",
+        "type": "HP Home appliance",
+        "ratio": 4.8,
+        "amount": 42500000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "type": "HP Commercial",
+        "ratio": 6.1,
+        "amount": 18200000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "HP Home appliance",
+        "ratio": 3.9,
+        "amount": 42500000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "HP Commercial",
+        "ratio": 5.4,
+        "amount": 18200000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "HP Home appliance",
+        "ratio": 3.9,
+        "amount": 42500000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "HP Commercial",
+        "ratio": 5.4,
+        "amount": 18200000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "HP Home appliance",
+        "ratio": 3.9,
+        "amount": 42500000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "HP Commercial",
+        "ratio": 5.4,
+        "amount": 18200000.0
+      }
+    ],
+    "byStage": [
+      {
+        "quarter": "Q4/2567",
+        "type": "HP Home appliance",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "type": "HP Home appliance",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "type": "HP Home appliance",
+        "stage": "Stage 3",
+        "contracts": 95,
+        "amount": 9800000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "type": "HP Commercial",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "type": "HP Commercial",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "type": "HP Commercial",
+        "stage": "Stage 3",
+        "contracts": 140,
+        "amount": 9800000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "HP Home appliance",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "HP Home appliance",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "HP Home appliance",
+        "stage": "Stage 3",
+        "contracts": 95,
+        "amount": 9800000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "HP Commercial",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "HP Commercial",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "type": "HP Commercial",
+        "stage": "Stage 3",
+        "contracts": 140,
+        "amount": 9800000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "HP Home appliance",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "HP Home appliance",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "HP Home appliance",
+        "stage": "Stage 3",
+        "contracts": 95,
+        "amount": 9800000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "HP Commercial",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "HP Commercial",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "type": "HP Commercial",
+        "stage": "Stage 3",
+        "contracts": 140,
+        "amount": 9800000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "HP Home appliance",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "HP Home appliance",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "HP Home appliance",
+        "stage": "Stage 3",
+        "contracts": 95,
+        "amount": 9800000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "HP Commercial",
+        "stage": "Stage 1",
+        "contracts": 820,
+        "amount": 12000000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "HP Commercial",
+        "stage": "Stage 2",
+        "contracts": 210,
+        "amount": 7400000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "type": "HP Commercial",
+        "stage": "Stage 3",
+        "contracts": 140,
+        "amount": 9800000.0
+      }
+    ],
+    "closures": [
+      {
+        "quarter": "Q4/2567",
+        "loanType": "HP Home appliance",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "loanType": "HP Commercial",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "loanType": "สินเชื่อเช่าซื้ออื่น",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "loanType": "HP Home appliance",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "loanType": "HP Commercial",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "loanType": "สินเชื่อเช่าซื้ออื่น",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "loanType": "HP Home appliance",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "loanType": "HP Commercial",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "loanType": "สินเชื่อเช่าซื้ออื่น",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "loanType": "HP Home appliance",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "loanType": "HP Commercial",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "loanType": "สินเชื่อเช่าซื้ออื่น",
+        "writeoffContracts": 12,
+        "writeoffAmount": 2100000.0,
+        "repossessContracts": 8,
+        "repossessAmount": 1450000.0,
+        "normalContracts": 64,
+        "normalAmount": 9800000.0
+      }
+    ],
+    "hpHomeNew": [
+      {
+        "month": "ม.ค. 2568",
+        "ratio": 2.1,
+        "amount": 3200000.0
+      },
+      {
+        "month": "ก.พ. 2568",
+        "ratio": 2.4,
+        "amount": 3450000.0
+      },
+      {
+        "month": "มี.ค. 2568",
+        "ratio": 2.8,
+        "amount": 3900000.0
+      },
+      {
+        "month": "เม.ย. 2568",
+        "ratio": 3.1,
+        "amount": 4150000.0
+      },
+      {
+        "month": "พ.ค. 2568",
+        "ratio": 3.0,
+        "amount": 4020000.0
+      },
+      {
+        "month": "มิ.ย. 2568",
+        "ratio": 2.7,
+        "amount": 3780000.0
+      },
+      {
+        "month": "ก.ค. 2568",
+        "ratio": 2.9,
+        "amount": 3960000.0
+      },
+      {
+        "month": "ส.ค. 2568",
+        "ratio": 3.2,
+        "amount": 4280000.0
+      }
+    ]
+  },
+  "sales": {
+    "mix": [
+      {
+        "quarter": "Q4/2567",
+        "category": "ตู้เย็น",
+        "amount": 28000000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "category": "แอร์",
+        "amount": 24500000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "category": "เครื่องซักผ้า",
+        "amount": 18200000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "category": "ทีวี",
+        "amount": 15400000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "category": "พัดลม",
+        "amount": 6800000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "category": "เตาแก๊ส",
+        "amount": 4100000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "category": "ตู้เย็น",
+        "amount": 28000000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "category": "แอร์",
+        "amount": 24500000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "category": "เครื่องซักผ้า",
+        "amount": 18200000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "category": "ทีวี",
+        "amount": 15400000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "category": "พัดลม",
+        "amount": 6800000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "category": "เตาแก๊ส",
+        "amount": 4100000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "category": "ตู้เย็น",
+        "amount": 28000000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "category": "แอร์",
+        "amount": 24500000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "category": "เครื่องซักผ้า",
+        "amount": 18200000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "category": "ทีวี",
+        "amount": 15400000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "category": "พัดลม",
+        "amount": 6800000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "category": "เตาแก๊ส",
+        "amount": 4100000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "category": "ตู้เย็น",
+        "amount": 28000000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "category": "แอร์",
+        "amount": 24500000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "category": "เครื่องซักผ้า",
+        "amount": 18200000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "category": "ทีวี",
+        "amount": 15400000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "category": "พัดลม",
+        "amount": 6800000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "category": "เตาแก๊ส",
+        "amount": 4100000.0
+      }
+    ],
+    "byBranch": [
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "amount": 4416000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "amount": 4158400.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "amount": 3900800.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "amount": 3643200.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "amount": 3385600.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "amount": 3128000.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "amount": 2870400.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "amount": 2612800.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "amount": 2355200.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "amount": 2097600.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "amount": 4800000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "amount": 4520000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "amount": 4240000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "amount": 3960000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "amount": 3680000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "amount": 3400000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "amount": 3120000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "amount": 2840000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "amount": 2560000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "amount": 2280000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "amount": 4800000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "amount": 4520000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "amount": 4240000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "amount": 3960000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "amount": 3680000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "amount": 3400000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "amount": 3120000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "amount": 2840000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "amount": 2560000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "amount": 2280000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "amount": 4800000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "amount": 4520000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "amount": 4240000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "amount": 3960000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "amount": 3680000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "amount": 3400000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "amount": 3120000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "amount": 2840000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "amount": 2560000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "amount": 2280000.0
+      }
+    ],
+    "byProduct": [
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "ตู้เย็น",
+        "amount": 1421952.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "เครื่องซักผ้า",
+        "amount": 1117248.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "แอร์",
+        "amount": 1015679.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "ทีวี",
+        "amount": 812543.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "พัดลม",
+        "amount": 457055.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "เตาแก๊ส",
+        "amount": 253919.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "ตู้เย็น",
+        "amount": 1245856.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "เครื่องซักผ้า",
+        "amount": 978887.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "แอร์",
+        "amount": 889897.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "ทีวี",
+        "amount": 711918.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "พัดลม",
+        "amount": 400453.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "เตาแก๊ส",
+        "amount": 222474.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "ตู้เย็น",
+        "amount": 1081301.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "เครื่องซักผ้า",
+        "amount": 849594.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "แอร์",
+        "amount": 772358.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "ทีวี",
+        "amount": 617886.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "พัดลม",
+        "amount": 347561.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "เตาแก๊ส",
+        "amount": 193089.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "ตู้เย็น",
+        "amount": 928287.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "เครื่องซักผ้า",
+        "amount": 729368.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "แอร์",
+        "amount": 663062.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "ทีวี",
+        "amount": 530449.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "พัดลม",
+        "amount": 298378.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "เตาแก๊ส",
+        "amount": 165765.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "ตู้เย็น",
+        "amount": 1090163.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "เครื่องซักผ้า",
+        "amount": 856556.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "แอร์",
+        "amount": 778687.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "ทีวี",
+        "amount": 622950.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "พัดลม",
+        "amount": 350409.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "เตาแก๊ส",
+        "amount": 194671.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "ตู้เย็น",
+        "amount": 937148.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "เครื่องซักผ้า",
+        "amount": 736331.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "แอร์",
+        "amount": 669391.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "ทีวี",
+        "amount": 535513.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "พัดลม",
+        "amount": 301226.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "เตาแก๊ส",
+        "amount": 167347.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "ตู้เย็น",
+        "amount": 795674.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "เครื่องซักผ้า",
+        "amount": 625173.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "แอร์",
+        "amount": 568339.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "ทีวี",
+        "amount": 454671.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "พัดลม",
+        "amount": 255752.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "เตาแก๊ส",
+        "amount": 142084.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "ตู้เย็น",
+        "amount": 665741.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "เครื่องซักผ้า",
+        "amount": 523082.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "แอร์",
+        "amount": 475529.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "ทีวี",
+        "amount": 380423.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "พัดลม",
+        "amount": 213988.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "เตาแก๊ส",
+        "amount": 118882.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "ตู้เย็น",
+        "amount": 758374.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "เครื่องซักผ้า",
+        "amount": 595865.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "แอร์",
+        "amount": 541696.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "ทีวี",
+        "amount": 433356.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "พัดลม",
+        "amount": 243763.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "เตาแก๊ส",
+        "amount": 135424.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "ตู้เย็น",
+        "amount": 628440.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "เครื่องซักผ้า",
+        "amount": 493775.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "แอร์",
+        "amount": 448886.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "ทีวี",
+        "amount": 359109.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "พัดลม",
+        "amount": 201998.0
+      },
+      {
+        "quarter": "Q4/2567",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "เตาแก๊ส",
+        "amount": 112221.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "ตู้เย็น",
+        "amount": 1545600.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "เครื่องซักผ้า",
+        "amount": 1214400.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "แอร์",
+        "amount": 1104000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "ทีวี",
+        "amount": 883199.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "พัดลม",
+        "amount": 496799.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "เตาแก๊ส",
+        "amount": 276000.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "ตู้เย็น",
+        "amount": 1354192.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "เครื่องซักผ้า",
+        "amount": 1064007.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "แอร์",
+        "amount": 967279.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "ทีวี",
+        "amount": 773823.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "พัดลม",
+        "amount": 435275.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "เตาแก๊ส",
+        "amount": 241819.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "ตู้เย็น",
+        "amount": 1175327.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "เครื่องซักผ้า",
+        "amount": 923471.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "แอร์",
+        "amount": 839519.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "ทีวี",
+        "amount": 671615.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "พัดลม",
+        "amount": 377783.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "เตาแก๊ส",
+        "amount": 209879.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "ตู้เย็น",
+        "amount": 1009007.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "เครื่องซักผ้า",
+        "amount": 792791.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "แอร์",
+        "amount": 720719.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "ทีวี",
+        "amount": 576576.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "พัดลม",
+        "amount": 324324.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "เตาแก๊ส",
+        "amount": 180179.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "ตู้เย็น",
+        "amount": 1184960.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "เครื่องซักผ้า",
+        "amount": 931039.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "แอร์",
+        "amount": 846399.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "ทีวี",
+        "amount": 677120.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "พัดลม",
+        "amount": 380879.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "เตาแก๊ส",
+        "amount": 211599.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "ตู้เย็น",
+        "amount": 1018640.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "เครื่องซักผ้า",
+        "amount": 800359.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "แอร์",
+        "amount": 727599.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "ทีวี",
+        "amount": 582079.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "พัดลม",
+        "amount": 327419.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "เตาแก๊ส",
+        "amount": 181899.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "ตู้เย็น",
+        "amount": 864864.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "เครื่องซักผ้า",
+        "amount": 679535.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "แอร์",
+        "amount": 617759.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "ทีวี",
+        "amount": 494207.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "พัดลม",
+        "amount": 277991.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "เตาแก๊ส",
+        "amount": 154439.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "ตู้เย็น",
+        "amount": 723632.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "เครื่องซักผ้า",
+        "amount": 568568.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "แอร์",
+        "amount": 516879.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "ทีวี",
+        "amount": 413503.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "พัดลม",
+        "amount": 232595.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "เตาแก๊ส",
+        "amount": 129219.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "ตู้เย็น",
+        "amount": 824320.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "เครื่องซักผ้า",
+        "amount": 647680.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "แอร์",
+        "amount": 588800.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "ทีวี",
+        "amount": 471039.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "พัดลม",
+        "amount": 264960.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "เตาแก๊ส",
+        "amount": 147200.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "ตู้เย็น",
+        "amount": 683088.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "เครื่องซักผ้า",
+        "amount": 536711.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "แอร์",
+        "amount": 487919.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "ทีวี",
+        "amount": 390335.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "พัดลม",
+        "amount": 219563.0
+      },
+      {
+        "quarter": "Q1/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "เตาแก๊ส",
+        "amount": 121979.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "ตู้เย็น",
+        "amount": 1545600.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "เครื่องซักผ้า",
+        "amount": 1214400.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "แอร์",
+        "amount": 1104000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "ทีวี",
+        "amount": 883199.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "พัดลม",
+        "amount": 496799.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "เตาแก๊ส",
+        "amount": 276000.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "ตู้เย็น",
+        "amount": 1354192.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "เครื่องซักผ้า",
+        "amount": 1064007.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "แอร์",
+        "amount": 967279.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "ทีวี",
+        "amount": 773823.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "พัดลม",
+        "amount": 435275.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "เตาแก๊ส",
+        "amount": 241819.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "ตู้เย็น",
+        "amount": 1175327.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "เครื่องซักผ้า",
+        "amount": 923471.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "แอร์",
+        "amount": 839519.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "ทีวี",
+        "amount": 671615.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "พัดลม",
+        "amount": 377783.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "เตาแก๊ส",
+        "amount": 209879.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "ตู้เย็น",
+        "amount": 1009007.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "เครื่องซักผ้า",
+        "amount": 792791.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "แอร์",
+        "amount": 720719.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "ทีวี",
+        "amount": 576576.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "พัดลม",
+        "amount": 324324.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "เตาแก๊ส",
+        "amount": 180179.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "ตู้เย็น",
+        "amount": 1184960.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "เครื่องซักผ้า",
+        "amount": 931039.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "แอร์",
+        "amount": 846399.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "ทีวี",
+        "amount": 677120.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "พัดลม",
+        "amount": 380879.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "เตาแก๊ส",
+        "amount": 211599.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "ตู้เย็น",
+        "amount": 1018640.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "เครื่องซักผ้า",
+        "amount": 800359.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "แอร์",
+        "amount": 727599.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "ทีวี",
+        "amount": 582079.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "พัดลม",
+        "amount": 327419.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "เตาแก๊ส",
+        "amount": 181899.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "ตู้เย็น",
+        "amount": 864864.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "เครื่องซักผ้า",
+        "amount": 679535.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "แอร์",
+        "amount": 617759.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "ทีวี",
+        "amount": 494207.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "พัดลม",
+        "amount": 277991.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "เตาแก๊ส",
+        "amount": 154439.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "ตู้เย็น",
+        "amount": 723632.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "เครื่องซักผ้า",
+        "amount": 568568.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "แอร์",
+        "amount": 516879.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "ทีวี",
+        "amount": 413503.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "พัดลม",
+        "amount": 232595.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "เตาแก๊ส",
+        "amount": 129219.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "ตู้เย็น",
+        "amount": 824320.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "เครื่องซักผ้า",
+        "amount": 647680.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "แอร์",
+        "amount": 588800.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "ทีวี",
+        "amount": 471039.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "พัดลม",
+        "amount": 264960.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "เตาแก๊ส",
+        "amount": 147200.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "ตู้เย็น",
+        "amount": 683088.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "เครื่องซักผ้า",
+        "amount": 536711.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "แอร์",
+        "amount": 487919.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "ทีวี",
+        "amount": 390335.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "พัดลม",
+        "amount": 219563.0
+      },
+      {
+        "quarter": "Q2/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "เตาแก๊ส",
+        "amount": 121979.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "ตู้เย็น",
+        "amount": 1545600.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "เครื่องซักผ้า",
+        "amount": 1214400.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "แอร์",
+        "amount": 1104000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "ทีวี",
+        "amount": 883199.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "พัดลม",
+        "amount": 496799.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "product": "เตาแก๊ส",
+        "amount": 276000.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "ตู้เย็น",
+        "amount": 1354192.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "เครื่องซักผ้า",
+        "amount": 1064007.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "แอร์",
+        "amount": 967279.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "ทีวี",
+        "amount": 773823.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "พัดลม",
+        "amount": 435275.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "product": "เตาแก๊ส",
+        "amount": 241819.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "ตู้เย็น",
+        "amount": 1175327.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "เครื่องซักผ้า",
+        "amount": 923471.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "แอร์",
+        "amount": 839519.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "ทีวี",
+        "amount": 671615.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "พัดลม",
+        "amount": 377783.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "product": "เตาแก๊ส",
+        "amount": 209879.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "ตู้เย็น",
+        "amount": 1009007.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "เครื่องซักผ้า",
+        "amount": 792791.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "แอร์",
+        "amount": 720719.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "ทีวี",
+        "amount": 576576.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "พัดลม",
+        "amount": 324324.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "product": "เตาแก๊ส",
+        "amount": 180179.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "ตู้เย็น",
+        "amount": 1184960.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "เครื่องซักผ้า",
+        "amount": 931039.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "แอร์",
+        "amount": 846399.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "ทีวี",
+        "amount": 677120.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "พัดลม",
+        "amount": 380879.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "product": "เตาแก๊ส",
+        "amount": 211599.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "ตู้เย็น",
+        "amount": 1018640.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "เครื่องซักผ้า",
+        "amount": 800359.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "แอร์",
+        "amount": 727599.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "ทีวี",
+        "amount": 582079.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "พัดลม",
+        "amount": 327419.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "product": "เตาแก๊ส",
+        "amount": 181899.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "ตู้เย็น",
+        "amount": 864864.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "เครื่องซักผ้า",
+        "amount": 679535.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "แอร์",
+        "amount": 617759.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "ทีวี",
+        "amount": 494207.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "พัดลม",
+        "amount": 277991.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "product": "เตาแก๊ส",
+        "amount": 154439.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "ตู้เย็น",
+        "amount": 723632.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "เครื่องซักผ้า",
+        "amount": 568568.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "แอร์",
+        "amount": 516879.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "ทีวี",
+        "amount": 413503.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "พัดลม",
+        "amount": 232595.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "product": "เตาแก๊ส",
+        "amount": 129219.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "ตู้เย็น",
+        "amount": 824320.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "เครื่องซักผ้า",
+        "amount": 647680.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "แอร์",
+        "amount": 588800.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "ทีวี",
+        "amount": 471039.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "พัดลม",
+        "amount": 264960.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "product": "เตาแก๊ส",
+        "amount": 147200.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "ตู้เย็น",
+        "amount": 683088.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "เครื่องซักผ้า",
+        "amount": 536711.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "แอร์",
+        "amount": 487919.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "ทีวี",
+        "amount": 390335.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "พัดลม",
+        "amount": 219563.0
+      },
+      {
+        "quarter": "Q3/2568",
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "product": "เตาแก๊ส",
+        "amount": 121979.0
+      }
+    ]
+  },
+  "inventory": {
+    "aging": [
+      {
+        "product": "ตู้เย็น 2 ประตู",
+        "grade": "มือ 1",
+        "cost": 1250000.0,
+        "provision": 95000.0,
+        "age0to2": 40,
+        "age3to4": 12,
+        "age4plus": 2,
+        "location": "คลังพระราม 2",
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร"
+      },
+      {
+        "product": "แอร์ 12000 BTU",
+        "grade": "มือ 1",
+        "cost": 1170000.0,
+        "provision": 107000.0,
+        "age0to2": 39,
+        "age3to4": 13,
+        "age4plus": 2,
+        "location": "คลังบางนา",
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี"
+      },
+      {
+        "product": "เครื่องซักผ้า 10kg",
+        "grade": "มือ 1",
+        "cost": 1090000.0,
+        "provision": 119000.0,
+        "age0to2": 38,
+        "age3to4": 14,
+        "age4plus": 2,
+        "location": "คลังโคราช",
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี"
+      },
+      {
+        "product": "ทีวี 55 นิ้ว",
+        "grade": "มือ 1",
+        "cost": 1010000.0,
+        "provision": 131000.0,
+        "age0to2": 37,
+        "age3to4": 15,
+        "age4plus": 2,
+        "location": "คลังเชียงใหม่",
+        "branch": "สาขาระยอง",
+        "province": "ระยอง"
+      },
+      {
+        "product": "พัดลมตั้งพื้น",
+        "grade": "มือ 1",
+        "cost": 930000.0,
+        "provision": 143000.0,
+        "age0to2": 36,
+        "age3to4": 16,
+        "age4plus": 3,
+        "location": "คลังหาดใหญ่",
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา"
+      },
+      {
+        "product": "เตาแก๊ส 2 หัว",
+        "grade": "มือ 1",
+        "cost": 850000.0,
+        "provision": 155000.0,
+        "age0to2": 35,
+        "age3to4": 17,
+        "age4plus": 4,
+        "location": "คลังพระราม 2",
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น"
+      },
+      {
+        "product": "ตู้เย็นมือสอง",
+        "grade": "มือ 2",
+        "cost": 770000.0,
+        "provision": 167000.0,
+        "age0to2": 34,
+        "age3to4": 18,
+        "age4plus": 5,
+        "location": "คลังบางนา",
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี"
+      },
+      {
+        "product": "แอร์มือสอง",
+        "grade": "มือ 2",
+        "cost": 690000.0,
+        "provision": 179000.0,
+        "age0to2": 33,
+        "age3to4": 19,
+        "age4plus": 6,
+        "location": "คลังโคราช",
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่"
+      }
+    ],
+    "minmax": [
+      {
+        "branch": "สาขาสยาม",
+        "province": "กรุงเทพมหานคร",
+        "minStock": 80.0,
+        "maxStock": 420.0,
+        "onHand": 190.0
+      },
+      {
+        "branch": "สาขารังสิต",
+        "province": "ปทุมธานี",
+        "minStock": 84.0,
+        "maxStock": 410.0,
+        "onHand": 198.0
+      },
+      {
+        "branch": "สาขาชลบุรี",
+        "province": "ชลบุรี",
+        "minStock": 88.0,
+        "maxStock": 400.0,
+        "onHand": 206.0
+      },
+      {
+        "branch": "สาขาระยอง",
+        "province": "ระยอง",
+        "minStock": 92.0,
+        "maxStock": 390.0,
+        "onHand": 214.0
+      },
+      {
+        "branch": "สาขานครราชสีมา",
+        "province": "นครราชสีมา",
+        "minStock": 96.0,
+        "maxStock": 380.0,
+        "onHand": 222.0
+      },
+      {
+        "branch": "สาขาขอนแก่น",
+        "province": "ขอนแก่น",
+        "minStock": 100.0,
+        "maxStock": 370.0,
+        "onHand": 230.0
+      },
+      {
+        "branch": "สาขาอุดรธานี",
+        "province": "อุดรธานี",
+        "minStock": 104.0,
+        "maxStock": 360.0,
+        "onHand": 238.0
+      },
+      {
+        "branch": "สาขาเชียงใหม่",
+        "province": "เชียงใหม่",
+        "minStock": 108.0,
+        "maxStock": 350.0,
+        "onHand": 246.0
+      },
+      {
+        "branch": "สาขาหาดใหญ่",
+        "province": "สงขลา",
+        "minStock": 112.0,
+        "maxStock": 340.0,
+        "onHand": 254.0
+      },
+      {
+        "branch": "สาขาสุราษฎร์",
+        "province": "สุราษฎร์ธานี",
+        "minStock": 116.0,
+        "maxStock": 330.0,
+        "onHand": 262.0
+      }
+    ]
+  },
+  "oil": [
+    {
+      "quarter": "Q4/2567",
+      "branch": "สาขาสยาม",
+      "province": "กรุงเทพมหานคร",
+      "liters": 32.0,
+      "bucket": "0-50 ลิตร"
+    },
+    {
+      "quarter": "Q4/2567",
+      "branch": "สาขารังสิต",
+      "province": "ปทุมธานี",
+      "liters": 68.0,
+      "bucket": "51-100 ลิตร"
+    },
+    {
+      "quarter": "Q4/2567",
+      "branch": "สาขาชลบุรี",
+      "province": "ชลบุรี",
+      "liters": 120.0,
+      "bucket": "101-150 ลิตร"
+    },
+    {
+      "quarter": "Q4/2567",
+      "branch": "สาขาระยอง",
+      "province": "ระยอง",
+      "liters": 175.0,
+      "bucket": "151-200 ลิตร"
+    },
+    {
+      "quarter": "Q4/2567",
+      "branch": "สาขานครราชสีมา",
+      "province": "นครราชสีมา",
+      "liters": 240.0,
+      "bucket": "มากกว่า 200 ลิตร"
+    },
+    {
+      "quarter": "Q4/2567",
+      "branch": "สาขาขอนแก่น",
+      "province": "ขอนแก่น",
+      "liters": 48.0,
+      "bucket": "0-50 ลิตร"
+    },
+    {
+      "quarter": "Q4/2567",
+      "branch": "สาขาอุดรธานี",
+      "province": "อุดรธานี",
+      "liters": 90.0,
+      "bucket": "51-100 ลิตร"
+    },
+    {
+      "quarter": "Q4/2567",
+      "branch": "สาขาเชียงใหม่",
+      "province": "เชียงใหม่",
+      "liters": 155.0,
+      "bucket": "151-200 ลิตร"
+    },
+    {
+      "quarter": "Q4/2567",
+      "branch": "สาขาหาดใหญ่",
+      "province": "สงขลา",
+      "liters": 210.0,
+      "bucket": "มากกว่า 200 ลิตร"
+    },
+    {
+      "quarter": "Q4/2567",
+      "branch": "สาขาสุราษฎร์",
+      "province": "สุราษฎร์ธานี",
+      "liters": 18.0,
+      "bucket": "0-50 ลิตร"
+    },
+    {
+      "quarter": "Q1/2568",
+      "branch": "สาขาสยาม",
+      "province": "กรุงเทพมหานคร",
+      "liters": 47.0,
+      "bucket": "0-50 ลิตร"
+    },
+    {
+      "quarter": "Q1/2568",
+      "branch": "สาขารังสิต",
+      "province": "ปทุมธานี",
+      "liters": 83.0,
+      "bucket": "51-100 ลิตร"
+    },
+    {
+      "quarter": "Q1/2568",
+      "branch": "สาขาชลบุรี",
+      "province": "ชลบุรี",
+      "liters": 135.0,
+      "bucket": "101-150 ลิตร"
+    },
+    {
+      "quarter": "Q1/2568",
+      "branch": "สาขาระยอง",
+      "province": "ระยอง",
+      "liters": 190.0,
+      "bucket": "151-200 ลิตร"
+    },
+    {
+      "quarter": "Q1/2568",
+      "branch": "สาขานครราชสีมา",
+      "province": "นครราชสีมา",
+      "liters": 255.0,
+      "bucket": "มากกว่า 200 ลิตร"
+    },
+    {
+      "quarter": "Q1/2568",
+      "branch": "สาขาขอนแก่น",
+      "province": "ขอนแก่น",
+      "liters": 63.0,
+      "bucket": "51-100 ลิตร"
+    },
+    {
+      "quarter": "Q1/2568",
+      "branch": "สาขาอุดรธานี",
+      "province": "อุดรธานี",
+      "liters": 105.0,
+      "bucket": "101-150 ลิตร"
+    },
+    {
+      "quarter": "Q1/2568",
+      "branch": "สาขาเชียงใหม่",
+      "province": "เชียงใหม่",
+      "liters": 170.0,
+      "bucket": "151-200 ลิตร"
+    },
+    {
+      "quarter": "Q1/2568",
+      "branch": "สาขาหาดใหญ่",
+      "province": "สงขลา",
+      "liters": 225.0,
+      "bucket": "มากกว่า 200 ลิตร"
+    },
+    {
+      "quarter": "Q1/2568",
+      "branch": "สาขาสุราษฎร์",
+      "province": "สุราษฎร์ธานี",
+      "liters": 33.0,
+      "bucket": "0-50 ลิตร"
+    },
+    {
+      "quarter": "Q2/2568",
+      "branch": "สาขาสยาม",
+      "province": "กรุงเทพมหานคร",
+      "liters": 47.0,
+      "bucket": "0-50 ลิตร"
+    },
+    {
+      "quarter": "Q2/2568",
+      "branch": "สาขารังสิต",
+      "province": "ปทุมธานี",
+      "liters": 83.0,
+      "bucket": "51-100 ลิตร"
+    },
+    {
+      "quarter": "Q2/2568",
+      "branch": "สาขาชลบุรี",
+      "province": "ชลบุรี",
+      "liters": 135.0,
+      "bucket": "101-150 ลิตร"
+    },
+    {
+      "quarter": "Q2/2568",
+      "branch": "สาขาระยอง",
+      "province": "ระยอง",
+      "liters": 190.0,
+      "bucket": "151-200 ลิตร"
+    },
+    {
+      "quarter": "Q2/2568",
+      "branch": "สาขานครราชสีมา",
+      "province": "นครราชสีมา",
+      "liters": 255.0,
+      "bucket": "มากกว่า 200 ลิตร"
+    },
+    {
+      "quarter": "Q2/2568",
+      "branch": "สาขาขอนแก่น",
+      "province": "ขอนแก่น",
+      "liters": 63.0,
+      "bucket": "51-100 ลิตร"
+    },
+    {
+      "quarter": "Q2/2568",
+      "branch": "สาขาอุดรธานี",
+      "province": "อุดรธานี",
+      "liters": 105.0,
+      "bucket": "101-150 ลิตร"
+    },
+    {
+      "quarter": "Q2/2568",
+      "branch": "สาขาเชียงใหม่",
+      "province": "เชียงใหม่",
+      "liters": 170.0,
+      "bucket": "151-200 ลิตร"
+    },
+    {
+      "quarter": "Q2/2568",
+      "branch": "สาขาหาดใหญ่",
+      "province": "สงขลา",
+      "liters": 225.0,
+      "bucket": "มากกว่า 200 ลิตร"
+    },
+    {
+      "quarter": "Q2/2568",
+      "branch": "สาขาสุราษฎร์",
+      "province": "สุราษฎร์ธานี",
+      "liters": 33.0,
+      "bucket": "0-50 ลิตร"
+    },
+    {
+      "quarter": "Q3/2568",
+      "branch": "สาขาสยาม",
+      "province": "กรุงเทพมหานคร",
+      "liters": 47.0,
+      "bucket": "0-50 ลิตร"
+    },
+    {
+      "quarter": "Q3/2568",
+      "branch": "สาขารังสิต",
+      "province": "ปทุมธานี",
+      "liters": 83.0,
+      "bucket": "51-100 ลิตร"
+    },
+    {
+      "quarter": "Q3/2568",
+      "branch": "สาขาชลบุรี",
+      "province": "ชลบุรี",
+      "liters": 135.0,
+      "bucket": "101-150 ลิตร"
+    },
+    {
+      "quarter": "Q3/2568",
+      "branch": "สาขาระยอง",
+      "province": "ระยอง",
+      "liters": 190.0,
+      "bucket": "151-200 ลิตร"
+    },
+    {
+      "quarter": "Q3/2568",
+      "branch": "สาขานครราชสีมา",
+      "province": "นครราชสีมา",
+      "liters": 255.0,
+      "bucket": "มากกว่า 200 ลิตร"
+    },
+    {
+      "quarter": "Q3/2568",
+      "branch": "สาขาขอนแก่น",
+      "province": "ขอนแก่น",
+      "liters": 63.0,
+      "bucket": "51-100 ลิตร"
+    },
+    {
+      "quarter": "Q3/2568",
+      "branch": "สาขาอุดรธานี",
+      "province": "อุดรธานี",
+      "liters": 105.0,
+      "bucket": "101-150 ลิตร"
+    },
+    {
+      "quarter": "Q3/2568",
+      "branch": "สาขาเชียงใหม่",
+      "province": "เชียงใหม่",
+      "liters": 170.0,
+      "bucket": "151-200 ลิตร"
+    },
+    {
+      "quarter": "Q3/2568",
+      "branch": "สาขาหาดใหญ่",
+      "province": "สงขลา",
+      "liters": 225.0,
+      "bucket": "มากกว่า 200 ลิตร"
+    },
+    {
+      "quarter": "Q3/2568",
+      "branch": "สาขาสุราษฎร์",
+      "province": "สุราษฎร์ธานี",
+      "liters": 33.0,
+      "bucket": "0-50 ลิตร"
+    }
+  ],
+  "service": {
+    "sla": [
+      {
+        "quarter": "Q4/2567",
+        "bucket": "0-7 วัน",
+        "jobs": 150
+      },
+      {
+        "quarter": "Q4/2567",
+        "bucket": "7-15 วัน",
+        "jobs": 55
+      },
+      {
+        "quarter": "Q4/2567",
+        "bucket": "15-30 วัน",
+        "jobs": 24
+      },
+      {
+        "quarter": "Q4/2567",
+        "bucket": "30-60 วัน",
+        "jobs": 12
+      },
+      {
+        "quarter": "Q4/2567",
+        "bucket": "60-90 วัน",
+        "jobs": 6
+      },
+      {
+        "quarter": "Q4/2567",
+        "bucket": "มากกว่า 90 วัน",
+        "jobs": 3
+      },
+      {
+        "quarter": "Q1/2568",
+        "bucket": "0-7 วัน",
+        "jobs": 180
+      },
+      {
+        "quarter": "Q1/2568",
+        "bucket": "7-15 วัน",
+        "jobs": 42
+      },
+      {
+        "quarter": "Q1/2568",
+        "bucket": "15-30 วัน",
+        "jobs": 18
+      },
+      {
+        "quarter": "Q1/2568",
+        "bucket": "30-60 วัน",
+        "jobs": 9
+      },
+      {
+        "quarter": "Q1/2568",
+        "bucket": "60-90 วัน",
+        "jobs": 4
+      },
+      {
+        "quarter": "Q1/2568",
+        "bucket": "มากกว่า 90 วัน",
+        "jobs": 2
+      },
+      {
+        "quarter": "Q2/2568",
+        "bucket": "0-7 วัน",
+        "jobs": 180
+      },
+      {
+        "quarter": "Q2/2568",
+        "bucket": "7-15 วัน",
+        "jobs": 42
+      },
+      {
+        "quarter": "Q2/2568",
+        "bucket": "15-30 วัน",
+        "jobs": 18
+      },
+      {
+        "quarter": "Q2/2568",
+        "bucket": "30-60 วัน",
+        "jobs": 9
+      },
+      {
+        "quarter": "Q2/2568",
+        "bucket": "60-90 วัน",
+        "jobs": 4
+      },
+      {
+        "quarter": "Q2/2568",
+        "bucket": "มากกว่า 90 วัน",
+        "jobs": 2
+      },
+      {
+        "quarter": "Q3/2568",
+        "bucket": "0-7 วัน",
+        "jobs": 180
+      },
+      {
+        "quarter": "Q3/2568",
+        "bucket": "7-15 วัน",
+        "jobs": 42
+      },
+      {
+        "quarter": "Q3/2568",
+        "bucket": "15-30 วัน",
+        "jobs": 18
+      },
+      {
+        "quarter": "Q3/2568",
+        "bucket": "30-60 วัน",
+        "jobs": 9
+      },
+      {
+        "quarter": "Q3/2568",
+        "bucket": "60-90 วัน",
+        "jobs": 4
+      },
+      {
+        "quarter": "Q3/2568",
+        "bucket": "มากกว่า 90 วัน",
+        "jobs": 2
+      }
+    ],
+    "provinces": [
+      {
+        "quarter": "Q4/2567",
+        "province": "กรุงเทพมหานคร",
+        "branch": "สาขาสยาม",
+        "jobs": 78,
+        "slaMet": 70,
+        "slaMiss": 8
+      },
+      {
+        "quarter": "Q4/2567",
+        "province": "ปทุมธานี",
+        "branch": "สาขารังสิต",
+        "jobs": 77,
+        "slaMet": 67,
+        "slaMiss": 10
+      },
+      {
+        "quarter": "Q4/2567",
+        "province": "ชลบุรี",
+        "branch": "สาขาชลบุรี",
+        "jobs": 76,
+        "slaMet": 64,
+        "slaMiss": 12
+      },
+      {
+        "quarter": "Q4/2567",
+        "province": "ระยอง",
+        "branch": "สาขาระยอง",
+        "jobs": 87,
+        "slaMet": 61,
+        "slaMiss": 26
+      },
+      {
+        "quarter": "Q4/2567",
+        "province": "นครราชสีมา",
+        "branch": "สาขานครราชสีมา",
+        "jobs": 66,
+        "slaMet": 58,
+        "slaMiss": 8
+      },
+      {
+        "quarter": "Q4/2567",
+        "province": "ขอนแก่น",
+        "branch": "สาขาขอนแก่น",
+        "jobs": 65,
+        "slaMet": 55,
+        "slaMiss": 10
+      },
+      {
+        "quarter": "Q4/2567",
+        "province": "อุดรธานี",
+        "branch": "สาขาอุดรธานี",
+        "jobs": 76,
+        "slaMet": 52,
+        "slaMiss": 24
+      },
+      {
+        "quarter": "Q4/2567",
+        "province": "เชียงใหม่",
+        "branch": "สาขาเชียงใหม่",
+        "jobs": 63,
+        "slaMet": 49,
+        "slaMiss": 14
+      },
+      {
+        "quarter": "Q4/2567",
+        "province": "สงขลา",
+        "branch": "สาขาหาดใหญ่",
+        "jobs": 54,
+        "slaMet": 46,
+        "slaMiss": 8
+      },
+      {
+        "quarter": "Q4/2567",
+        "province": "สุราษฎร์ธานี",
+        "branch": "สาขาสุราษฎร์",
+        "jobs": 65,
+        "slaMet": 43,
+        "slaMiss": 22
+      },
+      {
+        "quarter": "Q1/2568",
+        "province": "กรุงเทพมหานคร",
+        "branch": "สาขาสยาม",
+        "jobs": 78,
+        "slaMet": 70,
+        "slaMiss": 8
+      },
+      {
+        "quarter": "Q1/2568",
+        "province": "ปทุมธานี",
+        "branch": "สาขารังสิต",
+        "jobs": 77,
+        "slaMet": 67,
+        "slaMiss": 10
+      },
+      {
+        "quarter": "Q1/2568",
+        "province": "ชลบุรี",
+        "branch": "สาขาชลบุรี",
+        "jobs": 76,
+        "slaMet": 64,
+        "slaMiss": 12
+      },
+      {
+        "quarter": "Q1/2568",
+        "province": "ระยอง",
+        "branch": "สาขาระยอง",
+        "jobs": 87,
+        "slaMet": 61,
+        "slaMiss": 26
+      },
+      {
+        "quarter": "Q1/2568",
+        "province": "นครราชสีมา",
+        "branch": "สาขานครราชสีมา",
+        "jobs": 66,
+        "slaMet": 58,
+        "slaMiss": 8
+      },
+      {
+        "quarter": "Q1/2568",
+        "province": "ขอนแก่น",
+        "branch": "สาขาขอนแก่น",
+        "jobs": 65,
+        "slaMet": 55,
+        "slaMiss": 10
+      },
+      {
+        "quarter": "Q1/2568",
+        "province": "อุดรธานี",
+        "branch": "สาขาอุดรธานี",
+        "jobs": 76,
+        "slaMet": 52,
+        "slaMiss": 24
+      },
+      {
+        "quarter": "Q1/2568",
+        "province": "เชียงใหม่",
+        "branch": "สาขาเชียงใหม่",
+        "jobs": 63,
+        "slaMet": 49,
+        "slaMiss": 14
+      },
+      {
+        "quarter": "Q1/2568",
+        "province": "สงขลา",
+        "branch": "สาขาหาดใหญ่",
+        "jobs": 54,
+        "slaMet": 46,
+        "slaMiss": 8
+      },
+      {
+        "quarter": "Q1/2568",
+        "province": "สุราษฎร์ธานี",
+        "branch": "สาขาสุราษฎร์",
+        "jobs": 65,
+        "slaMet": 43,
+        "slaMiss": 22
+      },
+      {
+        "quarter": "Q2/2568",
+        "province": "กรุงเทพมหานคร",
+        "branch": "สาขาสยาม",
+        "jobs": 78,
+        "slaMet": 70,
+        "slaMiss": 8
+      },
+      {
+        "quarter": "Q2/2568",
+        "province": "ปทุมธานี",
+        "branch": "สาขารังสิต",
+        "jobs": 77,
+        "slaMet": 67,
+        "slaMiss": 10
+      },
+      {
+        "quarter": "Q2/2568",
+        "province": "ชลบุรี",
+        "branch": "สาขาชลบุรี",
+        "jobs": 76,
+        "slaMet": 64,
+        "slaMiss": 12
+      },
+      {
+        "quarter": "Q2/2568",
+        "province": "ระยอง",
+        "branch": "สาขาระยอง",
+        "jobs": 87,
+        "slaMet": 61,
+        "slaMiss": 26
+      },
+      {
+        "quarter": "Q2/2568",
+        "province": "นครราชสีมา",
+        "branch": "สาขานครราชสีมา",
+        "jobs": 66,
+        "slaMet": 58,
+        "slaMiss": 8
+      },
+      {
+        "quarter": "Q2/2568",
+        "province": "ขอนแก่น",
+        "branch": "สาขาขอนแก่น",
+        "jobs": 65,
+        "slaMet": 55,
+        "slaMiss": 10
+      },
+      {
+        "quarter": "Q2/2568",
+        "province": "อุดรธานี",
+        "branch": "สาขาอุดรธานี",
+        "jobs": 76,
+        "slaMet": 52,
+        "slaMiss": 24
+      },
+      {
+        "quarter": "Q2/2568",
+        "province": "เชียงใหม่",
+        "branch": "สาขาเชียงใหม่",
+        "jobs": 63,
+        "slaMet": 49,
+        "slaMiss": 14
+      },
+      {
+        "quarter": "Q2/2568",
+        "province": "สงขลา",
+        "branch": "สาขาหาดใหญ่",
+        "jobs": 54,
+        "slaMet": 46,
+        "slaMiss": 8
+      },
+      {
+        "quarter": "Q2/2568",
+        "province": "สุราษฎร์ธานี",
+        "branch": "สาขาสุราษฎร์",
+        "jobs": 65,
+        "slaMet": 43,
+        "slaMiss": 22
+      },
+      {
+        "quarter": "Q3/2568",
+        "province": "กรุงเทพมหานคร",
+        "branch": "สาขาสยาม",
+        "jobs": 78,
+        "slaMet": 70,
+        "slaMiss": 8
+      },
+      {
+        "quarter": "Q3/2568",
+        "province": "ปทุมธานี",
+        "branch": "สาขารังสิต",
+        "jobs": 77,
+        "slaMet": 67,
+        "slaMiss": 10
+      },
+      {
+        "quarter": "Q3/2568",
+        "province": "ชลบุรี",
+        "branch": "สาขาชลบุรี",
+        "jobs": 76,
+        "slaMet": 64,
+        "slaMiss": 12
+      },
+      {
+        "quarter": "Q3/2568",
+        "province": "ระยอง",
+        "branch": "สาขาระยอง",
+        "jobs": 87,
+        "slaMet": 61,
+        "slaMiss": 26
+      },
+      {
+        "quarter": "Q3/2568",
+        "province": "นครราชสีมา",
+        "branch": "สาขานครราชสีมา",
+        "jobs": 66,
+        "slaMet": 58,
+        "slaMiss": 8
+      },
+      {
+        "quarter": "Q3/2568",
+        "province": "ขอนแก่น",
+        "branch": "สาขาขอนแก่น",
+        "jobs": 65,
+        "slaMet": 55,
+        "slaMiss": 10
+      },
+      {
+        "quarter": "Q3/2568",
+        "province": "อุดรธานี",
+        "branch": "สาขาอุดรธานี",
+        "jobs": 76,
+        "slaMet": 52,
+        "slaMiss": 24
+      },
+      {
+        "quarter": "Q3/2568",
+        "province": "เชียงใหม่",
+        "branch": "สาขาเชียงใหม่",
+        "jobs": 63,
+        "slaMet": 49,
+        "slaMiss": 14
+      },
+      {
+        "quarter": "Q3/2568",
+        "province": "สงขลา",
+        "branch": "สาขาหาดใหญ่",
+        "jobs": 54,
+        "slaMet": 46,
+        "slaMiss": 8
+      },
+      {
+        "quarter": "Q3/2568",
+        "province": "สุราษฎร์ธานี",
+        "branch": "สาขาสุราษฎร์",
+        "jobs": 65,
+        "slaMet": 43,
+        "slaMiss": 22
+      }
+    ],
+    "csat": [
+      {
+        "quarter": "Q4/2567",
+        "score": 4.4
+      },
+      {
+        "quarter": "Q1/2568",
+        "score": 4.45
+      },
+      {
+        "quarter": "Q2/2568",
+        "score": 4.4
+      },
+      {
+        "quarter": "Q3/2568",
+        "score": 4.35
+      }
+    ]
+  }
+}

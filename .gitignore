@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.sharepoint-token.json
+.DS_Store
+Thumbs.db
+inbox/*
+!inbox/.gitkeep
+sample-data/_tmp_images/
+pipeline/*.log
