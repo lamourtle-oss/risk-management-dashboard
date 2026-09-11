@@ -49,8 +49,15 @@ function showBanner(message, isError) {
 }
 
 async function sha256(text) {
-  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+  const bytes = new TextEncoder().encode(text);
+  const buf = await crypto.subtle.digest("SHA-256", bytes);
   return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+function showLoginError(message) {
+  const el = $("login-error");
+  el.hidden = false;
+  el.textContent = message || "รหัสผ่านไม่ถูกต้อง";
 }
 
 function drawChart(id, config) {
@@ -431,13 +438,29 @@ function unlock() {
 $("login-form").addEventListener("submit", async (event) => {
   event.preventDefault();
   const expected = window.APP_CONFIG?.passwordHash;
-  const hash = await sha256($("password").value);
-  if (!expected || hash !== expected) {
-    $("login-error").hidden = false;
+  const password = $("password").value.trim();
+  if (!expected || expected === "REPLACE_ME") {
+    showLoginError("ยังไม่ได้ตั้งรหัสผ่านบนเว็บ");
     return;
   }
-  sessionStorage.setItem(AUTH_KEY, hash);
-  unlock();
+  if (!password) {
+    showLoginError("กรุณาใส่รหัสผ่าน");
+    return;
+  }
+  try {
+    if (!window.crypto?.subtle) {
+      throw new Error("เบราว์เซอร์นี้ตรวจรหัสผ่านบน HTTPS ไม่ได้");
+    }
+    const hash = await sha256(password);
+    if (hash !== expected) {
+      showLoginError("รหัสผ่านไม่ถูกต้อง ใช้ Risk2026 (ตัว R และตัวเลข ปี 2026 ไม่มีช่องว่าง)");
+      return;
+    }
+    sessionStorage.setItem(AUTH_KEY, hash);
+    unlock();
+  } catch (error) {
+    showLoginError(error.message || "ล็อกอินไม่สำเร็จ");
+  }
 });
 
 $("refresh-btn").addEventListener("click", refresh);

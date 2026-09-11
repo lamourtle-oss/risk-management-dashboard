@@ -133,6 +133,11 @@ button:disabled {
   gap: 14px;
 }
 
+#app[hidden],
+#gate[hidden] {
+  display: none !important;
+}
+
 .topbar,
 .filters,
 .tabs {
