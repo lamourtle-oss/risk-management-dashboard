@@ -435,56 +435,30 @@ function unlock() {
   loadData().catch((error) => showBanner(error.message, true));
 }
 
-$("login-form").addEventListener("submit", async (event) => {
-  event.preventDefault();
-  const expected = window.APP_CONFIG?.passwordHash;
-  const password = $("password").value.trim();
-  if (!expected || expected === "REPLACE_ME") {
-    showLoginError("ยังไม่ได้ตั้งรหัสผ่านบนเว็บ");
-    return;
-  }
-  if (!password) {
-    showLoginError("กรุณาใส่รหัสผ่าน");
-    return;
-  }
-  try {
-    if (!window.crypto?.subtle) {
-      throw new Error("เบราว์เซอร์นี้ตรวจรหัสผ่านบน HTTPS ไม่ได้");
-    }
-    const hash = await sha256(password);
-    if (hash !== expected) {
-      showLoginError("รหัสผ่านไม่ถูกต้อง ใช้ Risk2026 (ตัว R และตัวเลข ปี 2026 ไม่มีช่องว่าง)");
-      return;
-    }
-    sessionStorage.setItem(AUTH_KEY, hash);
-    unlock();
-  } catch (error) {
-    showLoginError(error.message || "ล็อกอินไม่สำเร็จ");
-  }
+document.addEventListener("dashboard-ready", function () {
+  loadData().catch(function (error) {
+    showBanner(error.message, true);
+  });
 });
 
 $("refresh-btn").addEventListener("click", refresh);
-$("quarter-filter").addEventListener("change", (event) => {
+$("quarter-filter").addEventListener("change", function (event) {
   state.quarter = event.target.value;
   render();
 });
-$("search").addEventListener("input", (event) => {
+$("search").addEventListener("input", function (event) {
   state.search = event.target.value.trim().toLowerCase();
   render();
 });
-$("npl-type").addEventListener("change", (event) => {
+$("npl-type").addEventListener("change", function (event) {
   state.nplType = event.target.value;
   renderNpl();
 });
-$("sales-branch").addEventListener("change", (event) => {
+$("sales-branch").addEventListener("change", function (event) {
   state.salesBranch = event.target.value;
   renderSales();
 });
-$("tabs").addEventListener("click", (event) => {
-  const btn = event.target.closest("button[data-tab]");
+$("tabs").addEventListener("click", function (event) {
+  var btn = event.target.closest("button[data-tab]");
   if (btn) showTab(btn.dataset.tab);
 });
-
-if (sessionStorage.getItem(AUTH_KEY) === window.APP_CONFIG?.passwordHash) {
-  unlock();
-}

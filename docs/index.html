@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css?v=3" />
   </head>
   <body>
     <div id="gate" class="gate">
@@ -19,10 +19,10 @@
         <h1>แดชบอร์ดปฏิบัติการ</h1>
         <p class="gate-copy">ข้อมูลจาก SharePoint IT Audit / Risk Management</p>
         <p class="hint">รหัสผ่านเริ่มต้น: Risk2026</p>
-        <form id="login-form">
+        <form id="login-form" action="#" method="post">
           <label for="password">รหัสผ่าน</label>
           <input id="password" name="password" type="password" autocomplete="current-password" required />
-          <button type="submit">เข้าสู่ระบบ</button>
+          <button id="login-btn" type="submit">เข้าสู่ระบบ</button>
           <p id="login-error" class="error" hidden>รหัสผ่านไม่ถูกต้อง</p>
         </form>
       </div>
@@ -236,8 +236,51 @@
       <form method="dialog"><button class="ghost">ปิด</button></form>
     </dialog>
 
+    <script src="js/config.js?v=3"></script>
+    <script>
+      (function () {
+        var form = document.getElementById("login-form");
+        var gate = document.getElementById("gate");
+        var app = document.getElementById("app");
+        var err = document.getElementById("login-error");
+        function showErr(msg) {
+          err.hidden = false;
+          err.textContent = msg;
+        }
+        async function check(password) {
+          var expected = window.APP_CONFIG && window.APP_CONFIG.passwordHash;
+          if (!expected) throw new Error("โหลดไฟล์รหัสผ่านไม่สำเร็จ");
+          var buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(password.trim()));
+          var hash = Array.from(new Uint8Array(buf))
+            .map(function (b) {
+              return b.toString(16).padStart(2, "0");
+            })
+            .join("");
+          return hash === expected;
+        }
+        function unlock() {
+          gate.hidden = true;
+          app.hidden = false;
+          app.inert = false;
+          document.dispatchEvent(new Event("dashboard-ready"));
+        }
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          check(document.getElementById("password").value)
+            .then(function (ok) {
+              if (!ok) {
+                showErr("รหัสผ่านไม่ถูกต้อง");
+                return;
+              }
+              unlock();
+            })
+            .catch(function (error) {
+              showErr(error.message || "ล็อกอินไม่สำเร็จ");
+            });
+        });
+      })();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-    <script src="js/config.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app.js?v=3"></script>
   </body>
 </html>
