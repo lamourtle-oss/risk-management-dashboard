@@ -1,9 +1,8 @@
-# GitHub Pages จากโฟลเดอร์ docs/ บนสาขา master
-# Settings → Pages → Deploy from a branch → master / docs
-
-name: Pages fallback
+name: Deploy GitHub Pages
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
