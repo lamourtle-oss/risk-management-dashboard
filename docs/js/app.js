@@ -424,7 +424,9 @@ function bind(id, eventName, handler) {
   if (el) el.addEventListener(eventName, handler);
 }
 
-startDashboard();
+loadData().catch(function (error) {
+  showBanner(error.message, true);
+});
 
 bind("refresh-btn", "click", refresh);
 bind("quarter-filter", "change", function (event) {
