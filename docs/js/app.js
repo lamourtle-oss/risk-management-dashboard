@@ -419,35 +419,31 @@ async function refresh() {
   showBanner("โหลดข้อมูลล่าสุดจากไฟล์ที่เผยแพร่แล้ว หากต้องการของใหม่จาก SharePoint ให้โหลดไฟล์ลงเครื่อง แล้วประมวลผลก่อน push GitHub");
 }
 
-function startDashboard() {
-  loadData().catch(function (error) {
-    showBanner(error.message, true);
-  });
+function bind(id, eventName, handler) {
+  var el = $(id);
+  if (el) el.addEventListener(eventName, handler);
 }
 
-document.addEventListener("dashboard-ready", startDashboard);
-if ($("app") && !$("app").hidden) {
-  startDashboard();
-}
+startDashboard();
 
-$("refresh-btn").addEventListener("click", refresh);
-$("quarter-filter").addEventListener("change", function (event) {
+bind("refresh-btn", "click", refresh);
+bind("quarter-filter", "change", function (event) {
   state.quarter = event.target.value;
   render();
 });
-$("search").addEventListener("input", function (event) {
+bind("search", "input", function (event) {
   state.search = event.target.value.trim().toLowerCase();
   render();
 });
-$("npl-type").addEventListener("change", function (event) {
+bind("npl-type", "change", function (event) {
   state.nplType = event.target.value;
   renderNpl();
 });
-$("sales-branch").addEventListener("change", function (event) {
+bind("sales-branch", "change", function (event) {
   state.salesBranch = event.target.value;
   renderSales();
 });
-$("tabs").addEventListener("click", function (event) {
+bind("tabs", "click", function (event) {
   var btn = event.target.closest("button[data-tab]");
   if (btn) showTab(btn.dataset.tab);
 });

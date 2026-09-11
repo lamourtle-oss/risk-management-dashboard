@@ -54,24 +54,20 @@ h2 {
 }
 
 .gate {
-  display: none;
-  position: fixed;
-  inset: 0;
-  z-index: 100;
-  min-height: 100vh;
-  place-items: center;
-  padding: 20px;
-  background:
-    radial-gradient(circle at top right, rgba(159, 18, 57, 0.08), transparent 30%),
-    linear-gradient(180deg, #f7f3eb, var(--paper));
+  display: block;
+  max-width: 420px;
+  margin: 12vh auto 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
 }
 
 body.locked {
-  overflow: hidden;
+  overflow: auto;
 }
 
 body.locked .gate {
-  display: grid !important;
+  display: block !important;
 }
 
 body.locked #app {

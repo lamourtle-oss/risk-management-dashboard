@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <title>STL Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css?v=7" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">STL operations</p>
+          <h1>แดชบอร์ดแสดงข้อมูล</h1>
+        </div>
+        <div class="topbar-actions">
+          <label class="inline">
+            ไตรมาส
+            <select id="quarter-filter"></select>
+          </label>
+          <input id="search" type="search" placeholder="ค้นหาสาขา, จังหวัด, สินค้า" />
+          <p class="updated">อัปเดต <span id="generated-at">-</span></p>
+          <button id="refresh-btn" type="button">รีเฟรชข้อมูล</button>
+        </div>
+      </header>
+
+      <p id="banner" class="banner" hidden></p>
+
+      <nav class="tabs" id="tabs">
+        <button type="button" class="active" data-tab="npl">1. NPL</button>
+        <button type="button" data-tab="sales">2. ยอดขายสาขา STL</button>
+        <button type="button" data-tab="inventory">3. อายุสินค้าคงเหลือ</button>
+        <button type="button" data-tab="oil">4. ยอดขายน้ำมัน</button>
+        <button type="button" data-tab="service">5. งานซ่อมและบริการ</button>
+      </nav>
+
+      <section class="tab-page" data-page="npl">
+        <div class="filters">
+          <label>ประเภท NPL
+            <select id="npl-type">
+              <option value="">ทั้งหมด</option>
+            </select>
+          </label>
+        </div>
+        <div class="layout">
+          <article class="panel">
+            <h2>1.1 สัดส่วน NPL ภาพรวม</h2>
+            <canvas id="npl-overview" height="240"></canvas>
+          </article>
+          <article class="panel">
+            <h2>1.2 NPL แต่ละ Stage</h2>
+            <p class="hint">HP Home appliance และ HP Commercial อ้างอิงตารางปี 2567 เป็นฐานเปรียบเทียบ</p>
+            <canvas id="npl-stage" height="240"></canvas>
+          </article>
+        </div>
+        <article class="panel">
+          <h2>1.3 สัญญาที่ปิด — Writeoff / ยึดหลักประกัน / ปิดปกติ</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>ประเภทสินเชื่อ</th>
+                  <th>Writeoff (สัญญา)</th>
+                  <th>Writeoff (มูลค่า)</th>
+                  <th>ยึดหลักประกัน (สัญญา)</th>
+                  <th>ยึดหลักประกัน (มูลค่า)</th>
+                  <th>ปิดปกติ (สัญญา)</th>
+                  <th>ปิดปกติ (มูลค่า)</th>
+                </tr>
+              </thead>
+              <tbody id="npl-close-body"></tbody>
+            </table>
+          </div>
+        </article>
+        <article class="panel">
+          <h2>1.4 NPL – HP Home appliance (สัญญาเกิดใหม่ตั้งแต่ ม.ค. 2568)</h2>
+          <canvas id="npl-home" height="220"></canvas>
+        </article>
+      </section>
+
+      <section class="tab-page" data-page="sales" hidden>
+        <div class="filters">
+          <label>สาขา
+            <select id="sales-branch">
+              <option value="">ทุกสาขา</option>
+            </select>
+          </label>
+        </div>
+        <div class="layout">
+          <article class="panel">
+            <h2>2.1 ยอดขายรวมแต่ละไตรมาส และสัดส่วนประเภทสินค้า</h2>
+            <p class="hint">ไม่รวมน้ำมัน</p>
+            <canvas id="sales-mix" height="240"></canvas>
+          </article>
+          <article class="panel">
+            <h2>2.2.1 ยอดขายสินค้าแต่ละสาขา</h2>
+            <canvas id="sales-branch-chart" height="240"></canvas>
+          </article>
+        </div>
+        <div class="layout">
+          <article class="panel">
+            <h2>2.2.2 สินค้าขายดี</h2>
+            <canvas id="sales-best" height="220"></canvas>
+          </article>
+          <article class="panel">
+            <h2>2.2.3 สินค้าขายไม่ดี</h2>
+            <canvas id="sales-worst" height="220"></canvas>
+          </article>
+        </div>
+        <article class="panel">
+          <h2>2.3 ตารางยอดขายสินค้าแต่ละสาขา</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>สาขา</th>
+                  <th>จังหวัด</th>
+                  <th>สินค้า</th>
+                  <th>ยอดขาย</th>
+                </tr>
+              </thead>
+              <tbody id="sales-table"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section class="tab-page" data-page="inventory" hidden>
+        <article class="panel">
+          <h2>3.1 Aging สินค้ามือ 1 และมือ 2</h2>
+          <p class="hint">คลิกแถวสินค้าเพื่อดู Location</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>สินค้า</th>
+                  <th>สภาพ</th>
+                  <th>Cost</th>
+                  <th>Provision</th>
+                  <th>0-2 ปี</th>
+                  <th>3-4 ปี</th>
+                  <th>4 ปีขึ้นไป</th>
+                  <th>สาขา</th>
+                </tr>
+              </thead>
+              <tbody id="aging-table"></tbody>
+            </table>
+          </div>
+        </article>
+        <div class="layout">
+          <article class="panel">
+            <h2>3.2 แผนที่สินค้าคงค้างนาน</h2>
+            <div id="inv-map" class="th-map"></div>
+          </article>
+          <article class="panel">
+            <h2>3.3 Min – Max stock</h2>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>สาขา</th>
+                    <th>จังหวัด</th>
+                    <th>Min</th>
+                    <th>Max</th>
+                    <th>คงเหลือ</th>
+                  </tr>
+                </thead>
+                <tbody id="minmax-table"></tbody>
+              </table>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="tab-page" data-page="oil" hidden>
+        <article class="panel">
+          <h2>ปริมาณยอดขายน้ำมัน จัดอันดับตามลิตร</h2>
+          <canvas id="oil-chart" height="240"></canvas>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>ช่วงปริมาณ</th>
+                  <th>จำนวนสาขา</th>
+                  <th>ลิตรรวม</th>
+                </tr>
+              </thead>
+              <tbody id="oil-table"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section class="tab-page" data-page="service" hidden>
+        <div class="layout">
+          <article class="panel">
+            <h2>5.1 ระยะเวลาซ่อม (SLA 7 วัน)</h2>
+            <canvas id="sla-chart" height="240"></canvas>
+          </article>
+          <article class="panel">
+            <h2>5.3 ความพึงพอใจงานซ่อมรายไตรมาส</h2>
+            <canvas id="csat-chart" height="240"></canvas>
+          </article>
+        </div>
+        <article class="panel">
+          <h2>5.2 แผนที่จังหวัดตาม / ไม่ตาม SLA</h2>
+          <div id="sla-map" class="th-map"></div>
+        </article>
+      </section>
+    </div>
+
+    <dialog id="popup">
+      <h2 id="popup-title"></h2>
+      <div id="popup-body"></div>
+      <form method="dialog"><button class="ghost">ปิด</button></form>
+    </dialog>
+
+    <script src="js/chart.umd.min.js?v=7"></script>
+    <script src="js/app.js?v=7"></script>
+  </body>
+</html>
