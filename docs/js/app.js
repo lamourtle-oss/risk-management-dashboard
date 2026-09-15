@@ -1,6 +1,15 @@
 const charts = {};
 const NPL_TYPE_ORDER = ["HP Home appliance", "HP Commercial", "C4C", "LockPhone", "Debt conso"];
-const NPL_COLORS = ["#1e3a5f", "#9f1239", "#b45309", "#166534", "#7c3aed"];
+const COLORS = {
+  slate: "#2e5a6b",
+  coral: "#c45b4a",
+  honey: "#d4a054",
+  sage: "#5d8a78",
+  lilac: "#7d6b93",
+  teal: "#4e8a96",
+};
+const SERIES = [COLORS.slate, COLORS.coral, COLORS.honey, COLORS.sage, COLORS.lilac, COLORS.teal];
+const NPL_COLORS = SERIES;
 const MAP = {
   กรุงเทพมหานคร: [180, 250],
   ปทุมธานี: [188, 232],
@@ -44,15 +53,39 @@ function showBanner(message, isError) {
   }
   el.hidden = false;
   el.textContent = message;
-  el.style.background = isError ? "#fff1f2" : "#fff7ed";
-  el.style.borderColor = isError ? "#fecdd3" : "#fed7aa";
-  el.style.color = isError ? "#9f1239" : "#9a3412";
+  el.style.background = isError ? "#f8ecea" : "#f8efe3";
+  el.style.borderColor = isError ? "#e8c4bc" : "#ead7bb";
+  el.style.color = isError ? "#9a3f34" : "#8a5a28";
+}
+
+function styleCharts() {
+  if (!window.Chart || Chart.defaults._stlTheme) return;
+  Chart.defaults._stlTheme = true;
+  Chart.defaults.font.family = '"IBM Plex Sans Thai", "IBM Plex Sans", sans-serif';
+  Chart.defaults.font.size = 12;
+  Chart.defaults.color = "#7a7168";
+  Chart.defaults.plugins.legend.labels.boxWidth = 10;
+  Chart.defaults.plugins.legend.labels.usePointStyle = true;
+  Chart.defaults.plugins.legend.labels.padding = 14;
+  Chart.defaults.plugins.tooltip.backgroundColor = "#2c2825";
+  Chart.defaults.plugins.tooltip.padding = 10;
+  Chart.defaults.plugins.tooltip.cornerRadius = 10;
+  Chart.defaults.elements.bar.borderRadius = 7;
+  Chart.defaults.elements.bar.borderSkipped = false;
+  Chart.defaults.elements.bar.borderWidth = 0;
+  Chart.defaults.elements.line.borderWidth = 2.5;
+  Chart.defaults.elements.line.tension = 0.28;
+  Chart.defaults.elements.point.radius = 3;
+  Chart.defaults.elements.point.hoverRadius = 5;
+  Chart.defaults.scale.grid.color = "rgba(44, 40, 37, 0.07)";
+  Chart.defaults.scale.grid.drawBorder = false;
 }
 
 function drawChart(id, config) {
   if (charts[id]) charts[id].destroy();
   const canvas = $(id);
   if (!canvas || !window.Chart) return;
+  styleCharts();
   charts[id] = new Chart(canvas, config);
 }
 
@@ -106,7 +139,7 @@ function renderNpl() {
             {
               label: "% NPL",
               data: types.map((t) => overview.find((item) => item.type === t)?.ratio || 0),
-              backgroundColor: "#1e3a5f",
+              backgroundColor: COLORS.slate,
             },
           ]
         : types.map((t, idx) => ({
@@ -123,7 +156,7 @@ function renderNpl() {
   const stages = (state.data.npl.byStage || []).filter((item) => !state.nplType || item.type === state.nplType);
   const stageQuarters = [...new Set(stages.map((item) => item.quarter).filter(Boolean))];
   const stageNames = [...new Set(stages.map((item) => item.stage))];
-  const quarterColors = ["#1e3a5f", "#9f1239", "#b45309", "#166534", "#7c3aed"];
+  const quarterColors = SERIES;
   drawChart("npl-stage", {
     type: "bar",
     data: {
@@ -175,7 +208,7 @@ function renderNpl() {
     type: "line",
     data: {
       labels: home.map((item) => item.month),
-      datasets: [{ label: "% NPL", data: home.map((item) => item.ratio), borderColor: "#1e3a5f", tension: 0.2 }],
+      datasets: [{ label: "% NPL", data: home.map((item) => item.ratio), borderColor: COLORS.slate, backgroundColor: "rgba(46, 90, 107, 0.14)", fill: true }],
     },
     options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } },
   });
@@ -194,7 +227,7 @@ function renderSales() {
         data: (quarters.length ? quarters : [""]).map((q) =>
           mix.filter((item) => item.category === cat && (!q || item.quarter === q)).reduce((sum, item) => sum + item.amount, 0)
         ),
-        backgroundColor: ["#1e3a5f", "#9f1239", "#b45309", "#166534", "#7c3aed", "#0f766e"][idx % 6],
+        backgroundColor: SERIES[idx % SERIES.length],
       })),
     },
     options: { plugins: { legend: { position: "bottom" } }, scales: { x: { stacked: true }, y: { stacked: true, beginAtZero: true } } },
@@ -209,7 +242,7 @@ function renderSales() {
       datasets: [
         {
           data: branchNames.map((name) => branches.filter((item) => item.branch === name).reduce((sum, item) => sum + item.amount, 0)),
-          backgroundColor: "#1e3a5f",
+          backgroundColor: COLORS.slate,
         },
       ],
     },
@@ -229,12 +262,12 @@ function renderSales() {
   const worst = ranked.slice(-5).reverse();
   drawChart("sales-best", {
     type: "bar",
-    data: { labels: best.map((item) => item[0]), datasets: [{ data: best.map((item) => item[1]), backgroundColor: "#166534" }] },
+    data: { labels: best.map((item) => item[0]), datasets: [{ data: best.map((item) => item[1]), backgroundColor: COLORS.sage }] },
     options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } },
   });
   drawChart("sales-worst", {
     type: "bar",
-    data: { labels: worst.map((item) => item[0]), datasets: [{ data: worst.map((item) => item[1]), backgroundColor: "#9f1239" }] },
+    data: { labels: worst.map((item) => item[0]), datasets: [{ data: worst.map((item) => item[1]), backgroundColor: COLORS.coral }] },
     options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } },
   });
 
@@ -255,15 +288,15 @@ function renderMap(targetId, points, colorFn, titleFn) {
       const color = colorFn(point);
       return `<g class="dot" data-title="${titleFn(point)}" data-body="${point.body}">
         <circle cx="${pos[0]}" cy="${pos[1]}" r="9" fill="${color}" stroke="#fff" stroke-width="2"></circle>
-        <text x="${pos[0] + 12}" y="${pos[1] + 4}" font-size="11" fill="#1c1917">${point.province}</text>
+        <text x="${pos[0] + 12}" y="${pos[1] + 4}" font-size="11" fill="#2c2825">${point.province}</text>
       </g>`;
     })
     .join("");
   $(targetId).innerHTML = `<svg viewBox="0 0 340 500">
-    <path d="M150 30 C210 40 250 90 240 140 C270 160 290 200 270 250 C300 280 280 320 240 330 C220 380 200 430 180 470 C160 430 150 380 155 330 C110 310 100 250 120 200 C90 150 110 80 150 30 Z" fill="#cfe3d4" stroke="#7fa08a"/>
+    <path d="M150 30 C210 40 250 90 240 140 C270 160 290 200 270 250 C300 280 280 320 240 330 C220 380 200 430 180 470 C160 430 150 380 155 330 C110 310 100 250 120 200 C90 150 110 80 150 30 Z" fill="#d5e4dc" stroke="#8eab9d"/>
     ${dots}
   </svg>
-  <p class="legend"><span style="color:#9f1239">● สูง / ไม่ตามเป้า</span><span style="color:#166534">● ปกติ</span></p>`;
+  <p class="legend"><span style="color:${COLORS.coral}">● สูง / ไม่ตามเป้า</span><span style="color:${COLORS.sage}">● ปกติ</span></p>`;
   $(targetId).querySelectorAll(".dot").forEach((node) => {
     node.addEventListener("click", () => {
       $("popup-title").textContent = node.dataset.title;
@@ -307,7 +340,7 @@ function renderInventory() {
     if (found) found.slow += point.slow;
     else unique.push({ ...point });
   });
-  renderMap("inv-map", unique, (p) => (p.slow >= 12 ? "#9f1239" : "#166534"), (p) => p.province);
+  renderMap("inv-map", unique, (p) => (p.slow >= 12 ? COLORS.coral : COLORS.sage), (p) => p.province);
 
   const minmax = (state.data.inventory.minmax || []).filter((item) => matchesSearch(`${item.branch} ${item.province}`));
   $("minmax-table").innerHTML = minmax
@@ -331,7 +364,7 @@ function renderOil() {
     type: "bar",
     data: {
       labels: order,
-      datasets: [{ label: "จำนวนสาขา", data: grouped.map((item) => item.count), backgroundColor: "#b45309" }],
+      datasets: [{ label: "จำนวนสาขา", data: grouped.map((item) => item.count), backgroundColor: grouped.map((_, idx) => SERIES[idx % SERIES.length]) }],
     },
     options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } },
   });
@@ -350,7 +383,7 @@ function renderService() {
       datasets: [
         {
           data: buckets.map((b) => sla.filter((item) => item.bucket === b).reduce((sum, item) => sum + item.jobs, 0)),
-          backgroundColor: buckets.map((b) => (b === "0-7 วัน" ? "#166534" : "#9f1239")),
+          backgroundColor: buckets.map((b) => (b === "0-7 วัน" ? COLORS.sage : COLORS.coral)),
         },
       ],
     },
@@ -362,7 +395,7 @@ function renderService() {
     type: "line",
     data: {
       labels: csat.map((item) => item.quarter),
-      datasets: [{ label: "CSAT", data: csat.map((item) => item.score), borderColor: "#1e3a5f", tension: 0.25 }],
+      datasets: [{ label: "CSAT", data: csat.map((item) => item.score), borderColor: COLORS.slate, backgroundColor: "rgba(46, 90, 107, 0.14)", fill: true }],
     },
     options: { scales: { y: { min: 0, max: 5 } } },
   });
@@ -379,7 +412,7 @@ function renderService() {
   unique.forEach((item) => {
     item.body = `ตาม SLA ${item.slaMet} งาน<br>ไม่ตาม SLA ${item.slaMiss} งาน`;
   });
-  renderMap("sla-map", unique, (p) => (p.slaMiss > p.slaMet * 0.2 ? "#9f1239" : "#166534"), (p) => p.province);
+  renderMap("sla-map", unique, (p) => (p.slaMiss > p.slaMet * 0.2 ? COLORS.coral : COLORS.sage), (p) => p.province);
 }
 
 function render() {
